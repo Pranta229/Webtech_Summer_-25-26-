@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup</title>
+</head>
+<body>
+    <div class="container">
+
+    
+
+    <h1>User Registration Form</h1>
+
+    <form>
+        <fieldset>
+            <legend>  Personal Information </legend>
+        <table>
+            <tr>
+                <td><label for="First name">First Name:</label></td>
+                <td>
+                    <input type="text" id="First Name" name="First Name"
+                           placeholder="Enter Your First Name" required>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Last Name">Last Name:</label></td>
+                <td>
+                    <input type="text" id="Last Name" name="Last Name" placeholder="Enter your Last Name">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="DOB">Date of Birth:</label></td>
+                <td>
+                    <input type="date" id="DOB" name="DOB" placeholder="mm/dd/yyyy">
+                </td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="Male" name="Gender" value="Male">
+                    <label for="Male">Male</label>
+                    <input type="radio" id="Female" name="Gender" value="Female">
+                    <label for="Female">Female</label>
+                    <input type="radio" id="Other" name="Gender" value="Other">
+                    <label for="Other">Female</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="PatientFile">Patient Prescription:</label></td>
+                <td>
+                    <input type="file" id="PatientFile" name="PatientFile">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="DOB">Patient DOB:</label></td>
+                <td>
+                    <input type="date" id="DOB" name="DOB">
+                </td>
+            </tr>
+
+                <td> <label for="DeptDoctor"> Selected Doctor Dept: </label></td>
+                <td>
+                    <input type ="checkbox" id="Medicine" name="DeptDoctor">
+                    <label for ="Medicine"> Medicine </label>
+                    <br>
+                    <input type ="checkbox" id="Cardiac" name="DeptDoctor">
+                    <label for ="Cardiac"> Cardiac </label>
+                    <br>
+                    <input type ="checkbox" id="Neorology" name="DeptDoctor">
+                    <label for ="Neorology"> Neorology </label>
+
+                </td>
+            </tr>
+
+
+
+        </table>
+        </fieldset>
+
+        <fieldset>
+            <legend> Contact Information </legend>
+            <table>
+                <tr>
+                <td><label for="Email">Email address:</label></td>
+                <td>
+                    <input type="email" id="Email" name="Email" placeholder="Enter your Email">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Number">Phone Number:</label></td>
+                <td>
+                    <input type="number" id="Number" name="Number" placeholder="Enter your Number">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="Address">Address:</label></td>
+                <td>
+                    <textarea id="Address" name="Address" rows="5" cols="20" Style= "resize:none" placeholder="Enter Your Full Address"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td> <label for= "patientcitizen"> Country:  </label></td>
+                <td>
+                    <select id="country"> 
+                    <option id ="Default" value="Default"> -------- Select Country ----- </option>
+                    <option id ="BD" value="Bangladesh"> Bangladesh </option>
+                    <option id ="UK" value="UnitedKingdom"> United Kingdom </option>
+                    <option id ="Brazil" value="Brazil"> Brazil </option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                   </table>
+        </fieldset>
+
+        <fieldset>
+            <legend>  Account Information </legend>
+        <table>
+
+
+
+                <tr> 
+                <td> <label for="username"> User Name: </label> </td>
+                <td> <input type="text" id="username" name="username"> </td>
+                </tr>
+                <tr>
+                    <td> <label for="password"> Password: </label> </td>
+                    <td> <input type="password" id="password" name="password"> </td>
+                </tr>
+
+                <tr>
+                    <td> <label for="Conpassword">Confirm  Password: </label> </td>
+                    <td> <input type="Conpassword" id="Conpassword" name="Conpassword"> </td>
+                </tr>
+            </table>
+        </fieldset>
+       
+        <input type="checkbox" id="Condition" name="Condition">
+        <label for="Condition"> <font color= "red"> I Agree Terms and Condition * </font></label>
+        <br><br>
+        <input type="submit" id="submit" name="submit" value="Registor">
+        <input type="reset" id="reset" name="reset" value="Reset">
+        
+            
+        
+    </form>
+</div>
+</body>
+</html>
